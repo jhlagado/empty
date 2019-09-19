@@ -1,0 +1,70 @@
+---
+- request:
+    # yamllint disable
+    url: ^/v1/apigw/items$
+    method: GET
+  response:
+    status: 200
+    headers:
+        Content-Type: application/json
+    body: >
+        [{
+            "id": "1",
+            "name": "Item 1",
+            "description": "Lorem ipsum dolor sit amet, dolor sit amet lorem consectetur adipiscing elit."
+        },
+        {
+            "id": "2",
+            "name": "Item 2",
+            "description": "Lorem ipsum dolor sit amet, dolor sit amet lorem consectetur adipiscing elit."
+        },
+        {
+            "name":"Document Management",
+            "description":"Document Management",
+            "id":3
+        },
+        {
+            "id": "4",
+            "name": "Item 4",
+            "description": "Lorem ipsum dolor sit amet, dolor sit amet lorem consectetur adipiscing elit."
+        },
+        {
+            "id": "5",
+            "name": "Item 5",
+            "description": "Lorem ipsum dolor sit amet, dolor sit amet lorem consectetur adipiscing elit."
+        },
+        {
+            "id": "6",
+            "name": "Item 6",
+            "description": "Lorem ipsum dolor sit amet, dolor sit amet lorem consectetur adipiscing elit."
+        },
+        {
+            "id": "7",
+            "name": "Item 7",
+            "description": "Lorem ipsum dolor sit amet, dolor sit amet lorem consectetur adipiscing elit."
+        },
+        {
+            "id": "8",
+            "name": "Item 8",
+            "description": "Lorem ipsum dolor sit amet, dolor sit amet lorem consectetur adipiscing elit."
+        },
+        {
+            "id": "9",
+            "name": "Item 9",
+            "description": "Lorem ipsum dolor sit amet, dolor sit amet lorem consectetur adipiscing elit."
+        },
+        {
+            "id": "10",
+            "name": "Item 10",
+            "description": "Lorem ipsum dolor sit amet, dolor sit amet lorem consectetur adipiscing elit."
+        },
+        {
+            "id": "11",
+            "name": "Item 11",
+            "description": "Lorem ipsum dolor sit amet, dolor sit amet lorem consectetur adipiscing elit."
+        },
+        {
+            "id": "12",
+            "name": "Item 12",
+            "description": "Lorem ipsum dolor sit amet, dolor sit amet lorem consectetur adipiscing elit."
+        }]

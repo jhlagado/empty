@@ -1,0 +1,69 @@
+{
+  "name": "items",
+  "version": "1.0.0",
+  "description": "Item List",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint src/**/*.ts* --fix",
+    "start": "parcel ./src/index.html --port 1334 --public-url '/items'",
+    "stubs": "node ./stubby/index.js",
+    "build": "parcel build ./src/index.html --public-url '/items'",
+    "test": "npm run lint && jest --coverage",
+    "test-dev": "jest"
+  },
+  "keywords": [
+    "parcel",
+    "react"
+  ],
+  "author": "John Hardy <“jh@lagado.com”> (https://www.lagado.com)",
+  "license": "MIT",
+  "dependencies": {
+    "@reach/router": "^1.2.1",
+    "react": "^16.9.0",
+    "react-dom": "^16.9.0",
+    "react-redux": "^7.1.0",
+    "react-transition-group": "^4.2.2",
+    "redux": "^4.0.4",
+    "redux-actions": "^2.6.5",
+    "redux-api-middleware": "^3.0.1",
+    "styled-components": "^4.3.2"
+  },
+  "devDependencies": {
+    "@testing-library/jest-dom": "^4.1.0",
+    "@testing-library/react": "^9.1.3",
+    "@types/fetch-mock": "^7.3.1",
+    "@types/jest": "^24.0.18",
+    "@types/node": "^12.7.2",
+    "@types/reach__router": "^1.2.5",
+    "@types/react": "^16.9.2",
+    "@types/react-dom": "^16.9.0",
+    "@types/react-redux": "^7.1.2",
+    "@types/react-transition-group": "^4.2.2",
+    "@types/redux-actions": "^2.6.1",
+    "@types/redux-api-middleware": "^3.0.1",
+    "@types/redux-mock-store": "^1.0.1",
+    "@types/styled-components": "^4.1.18",
+    "@types/webpack-env": "^1.14.0",
+    "@typescript-eslint/eslint-plugin": "^2.0.0",
+    "@typescript-eslint/parser": "^2.0.0",
+    "eslint": "^6.2.1",
+    "eslint-config-prettier": "^6.1.0",
+    "eslint-plugin-prettier": "^3.1.0",
+    "eslint-plugin-react": "^7.14.3",
+    "fetch-mock": "^7.3.9",
+    "jest": "^24.9.0",
+    "node-fetch": "^2.6.0",
+    "parcel-bundler": "^1.12.3",
+    "parcel-plugin-html-externals": "^0.1.2",
+    "prettier": "^1.18.2",
+    "redux-devtools-extension": "^2.13.8",
+    "redux-mock-store": "^1.5.3",
+    "sass": "^1.22.10",
+    "stubby": "^4.1.1",
+    "ts-jest": "^24.0.2",
+    "typescript": "^3.5.3"
+  },
+  "externals": {
+    "/config/**/*": false
+  }
+}
